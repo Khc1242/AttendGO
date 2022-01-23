@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEventActivity">
+
+    <Button
+        android:id="@+id/eventBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/create_event"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTIL"
+        app:layout_constraintVertical_bias="0.746" />
+
+    <ProgressBar
+        android:id="@+id/submitPB"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/eventBtn"
+        app:layout_constraintEnd_toEndOf="@+id/eventBtn"
+        app:layout_constraintStart_toStartOf="@+id/eventBtn"
+        app:layout_constraintTop_toTopOf="@+id/eventBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/createCloseIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/createTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/reg_edittext_style"
+            android:ems="10"
+            android:hint="@string/event_name"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/createTIL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.119">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventOrgName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="@string/org_name"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/createTIL3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.119">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eventHostName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/reg_edittext_style"
+                    android:ems="10"
+                    android:hint="@string/host_s_name"
+                    android:inputType="text"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/createTIL4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.119">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/eventHostEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/reg_edittext_style"
+                        android:ems="10"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/createTIL5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintVertical_bias="0.119">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/eventDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/reg_edittext_style"
+                            android:ems="10"
+                            android:hint="@string/any_description"
+                            android:inputType="text"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/createTIL6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintVertical_bias="0.119">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/datePickerTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="@string/select_date"
+                                    android:textStyle="bold|italic"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.046"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0" />
+
+                                <TextView
+                                    android:id="@+id/timePickerTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="144dp"
+                                    android:gravity="center_vertical|start"
+                                    android:text="@string/select_time"
+                                    android:textDirection="locale"
+                                    android:textStyle="bold|italic"
+                                    app:layout_constraintBottom_toBottomOf="@+id/datePickerTV"
+                                    app:layout_constraintStart_toEndOf="@+id/datePickerTV"
+                                    app:layout_constraintTop_toTopOf="@+id/datePickerTV"
+                                    app:layout_constraintVertical_bias="0.0" />
+
+                                <TextView
+                                    android:id="@+id/locationPickerTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="50dp"
+                                    android:text="Get Location"
+                                    android:textStyle="bold|italic"
+                                    app:layout_constraintStart_toStartOf="@+id/datePickerTV"
+                                    app:layout_constraintTop_toBottomOf="@+id/datePickerTV" />
+
+                                <ImageButton
+                                    android:id="@+id/datePickerButton"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="@+id/datePickerTV"
+                                    app:layout_constraintTop_toBottomOf="@+id/datePickerTV"
+                                    app:srcCompat="@drawable/ic_baseline_today_24" />
+
+                                <ImageButton
+                                    android:id="@+id/timePickerButton"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="@+id/timePickerTV"
+                                    app:layout_constraintTop_toBottomOf="@+id/timePickerTV"
+                                    app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+                                <ImageButton
+                                    android:id="@+id/locationPickerButton"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="@+id/locationPickerTV"
+                                    app:layout_constraintTop_toBottomOf="@+id/locationPickerTV"
+                                    app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+                                <TextView
+                                    android:id="@+id/locationTV"
+                                    android:layout_width="225dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text=""
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/locationPickerButton"
+                                    app:layout_constraintStart_toEndOf="@+id/locationPickerButton"
+                                    app:layout_constraintTop_toBottomOf="@+id/locationPickerTV" />
+
+                                <TextView
+                                    android:id="@+id/dateTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text=""
+                                    app:layout_constraintBottom_toBottomOf="@+id/datePickerButton"
+                                    app:layout_constraintStart_toEndOf="@+id/datePickerButton"
+                                    app:layout_constraintTop_toBottomOf="@+id/datePickerTV" />
+
+                                <TextView
+                                    android:id="@+id/timeTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="19dp"
+                                    android:layout_marginStart="8dp"
+                                    android:text=""
+                                    app:layout_constraintBottom_toBottomOf="@+id/timePickerButton"
+                                    app:layout_constraintStart_toEndOf="@+id/timePickerButton"
+                                    app:layout_constraintTop_toBottomOf="@+id/timePickerTV" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

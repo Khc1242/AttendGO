@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetailsActivity" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.126"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.101" />
+
+            <TextView
+                android:id="@+id/eventID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/eventName"
+                app:layout_constraintTop_toBottomOf="@+id/eventName" />
+
+            <TextView
+                android:id="@+id/eventOrganization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Org"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/eventOrgTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/eventOrgTV"
+                app:layout_constraintTop_toBottomOf="@+id/eventOrgTV" />
+
+            <TextView
+                android:id="@+id/eventTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/eventDate"
+                app:layout_constraintEnd_toEndOf="@+id/eventTimeTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/eventTimeTV"
+                app:layout_constraintTop_toBottomOf="@+id/eventTimeTV" />
+
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/eventDateTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/eventDateTV"
+                app:layout_constraintTop_toBottomOf="@+id/eventDateTV" />
+
+            <TextView
+                android:id="@+id/eventAddress"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/eventAddressTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/eventAddressTV"
+                app:layout_constraintTop_toBottomOf="@+id/eventAddressTV" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/descriptionTV"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="@+id/descriptionTV"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionTV" />
+
+            <TextView
+                android:id="@+id/hostEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Host Email"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/hostName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/hostName"
+                app:layout_constraintTop_toBottomOf="@+id/hostName" />
+
+            <TextView
+                android:id="@+id/hostName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Host"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/hostNameTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/hostNameTV"
+                app:layout_constraintTop_toBottomOf="@+id/hostNameTV" />
+
+            <ImageView
+                android:id="@+id/eventDetailsIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_close_24" />
+
+            <TextView
+                android:id="@+id/eventOrgTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Organization:"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/eventName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/eventName"
+                app:layout_constraintTop_toBottomOf="@+id/eventID" />
+
+            <TextView
+                android:id="@+id/hostNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Host Name:"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/eventOrgTV"
+                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintStart_toStartOf="@+id/eventOrgTV"
+                app:layout_constraintTop_toBottomOf="@+id/eventOrganization" />
+
+            <TextView
+                android:id="@+id/descriptionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Description:"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/hostNameTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/hostNameTV"
+                app:layout_constraintTop_toBottomOf="@+id/hostEmail" />
+
+            <TextView
+                android:id="@+id/eventDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Date:"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/descriptionTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/descriptionTV"
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+            <TextView
+                android:id="@+id/eventAddressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Address:"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/eventDateTV"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/eventDateTV"
+                app:layout_constraintTop_toBottomOf="@+id/eventDate" />
+
+            <TextView
+                android:id="@+id/eventTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time:"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/eventDateTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toEndOf="@+id/eventDateTV"
+                app:layout_constraintTop_toTopOf="@+id/eventDateTV" />
+
+            <Button
+                android:id="@+id/downloadQRCodeBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="70dp"
+                android:text="Download QR Code"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventAddress"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/checkAttendeeBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Check Attendees"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/downloadQRCodeBtn"
+                app:layout_constraintStart_toStartOf="@+id/downloadQRCodeBtn"
+                app:layout_constraintTop_toBottomOf="@+id/downloadQRCodeBtn"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

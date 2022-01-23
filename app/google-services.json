@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "861142740124",
+    "project_id": "attend-go-ef4db",
+    "storage_bucket": "attend-go-ef4db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861142740124:android:49f502bd718517f1719159",
+        "android_client_info": {
+          "package_name": "com.sucfyp.attendgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861142740124-jsg9hp3sju5u2um7qae5dnotf76a2fsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqGM2FheyvwIECtmAz0wQ0okqYkkTAToQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861142740124-jsg9hp3sju5u2um7qae5dnotf76a2fsa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
